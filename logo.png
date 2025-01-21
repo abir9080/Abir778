@@ -1,0 +1,359 @@
+<html lang="ar">
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>تسجيل الدخول</title> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+  <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            color: white;
+            position: relative;
+        }
+
+        #pageLogo {
+            width: 200px;
+            height: 200px;
+            background-image: url('logo.png');
+            background-size: cover;
+            background-position: center;
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+
+        .login-container {
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 15px;
+            border: 2px solid #4caf50;
+            background-color: transparent;
+            color: white;
+            width: 100%;
+            max-width: 350px;
+            box-sizing: border-box;
+            margin-top: 100px;
+            position: relative;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+        }
+
+        input[type="text"].code {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            background-color: #555;
+            color: white;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .icon-container {
+            margin-top: 20px;
+        }
+
+        .icon-container a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .icon-container a:hover {
+            color: #4caf50;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: auto;
+            padding: 20px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #000;
+        }
+
+        .social-icons a {
+            margin: 0 15px;
+            font-size: 40px; /* زيادة حجم الأيقونات */
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #4caf50;
+        }
+        
+        <!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            color: white;
+            position: relative;
+        }
+
+        #pageLogo {
+            width: 200px;
+            height: 200px;
+            background-image: url('logo.png');
+            background-size: cover;
+            background-position: center;
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+
+        .login-container {
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 15px;
+            border: 2px solid #4caf50;
+            background-color: transparent;
+            color: white;
+            width: 100%;
+            max-width: 350px;
+            box-sizing: border-box;
+            margin-top: 100px;
+            position: relative;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+        }
+
+        input[type="text"].code {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            background-color: #555;
+            color: white;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .icon-container {
+            margin-top: 20px;
+        }
+
+        .icon-container a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .icon-container a:hover {
+            color: #4caf50;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: auto;
+            padding: 20px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #000;
+        }
+
+        .social-icons a {
+            margin: 0 15px;
+            font-size: 40px; /* زيادة حجم الأيقونات */
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #4caf50;
+        }
+        
+     
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.linebet {
+    color: green;
+    font-weight: bold;
+}
+
+.xbet {
+    color: lightblue;
+    font-weight: bold;
+}
+
+.melbet {
+    color: yellow;
+    font-weight: bold;
+}
+
+.megapari {
+    color: green;
+    font-weight: bold;
+}
+
+.starz {
+    color: red;
+    font-weight: bold;
+}
+
+.betwinner {
+    color: yellow;
+    font-weight: bold;
+}
+    </style> 
+ </head> 
+ <body> 
+  <div id="pageLogo"></div> 
+  <div class="login-container"> 
+   <h2>Log in</h2> 
+   <form> 
+    <input type="text" class="code" id="activationCode" placeholder="activation code" required> 
+    <div id="err" style="display: none;"> 
+     <span class="starz">Error activation code</span>
+     <br>
+     <br> 
+    </div> 
+    <div class="row"> 
+     <label class="checkbox-label"> <input type="checkbox" name="bet_option" onclick="selectOnl<h2>Log in</h2>yThis(this)"> <span class="linebet">LINEBET</span> </label> 
+     <label class="checkbox-label"> <input type="checkbox" name="bet_option" onclick="selectOnlyThis(this)" checked> <span class="xbet">1XBET</span> </label> 
+     <label class="checkbox-label"> <input type="checkbox" name="bet_option" onclick="selectOnlyThis(this)"> <span class="melbet">MELBET</span> </label> 
+    </div> 
+    <div class="row"> 
+     <label class="checkbox-label"> <input type="checkbox" name="bet_option" onclick="selectOnlyThis(this)"> <span class="megapari">Megapari</span> </label> 
+     <label class="checkbox-label"> <input type="checkbox" name="bet_option" onclick="selectOnlyThis(this)"> <span class="starz">888starz</span> </label> 
+     <label class="checkbox-label"> <input type="checkbox" name="bet_option" onclick="selectOnlyThis(this)"> <span class="betwinner">BETWINNER</span> </label> 
+    </div> 
+    <input type="submit" id="submitButton" onclick="preventDefault();" value="تأكيد"> 
+   </form> 
+   <div class="icon-container"> 
+    <a href="https://t.me/Thanos_1x" target="_blank" title="تابعنا على تليجرام"><i class="fab fa-telegram"></i></a> 
+    <a href="https://t.me/Thanos_1x" target="_blank" title="شراء كود التفعيل"><i class="fas fa-shopping-cart"></i></a> 
+   </div> 
+  </div> 
+  <script>
+ var submitButton = document.getElementById('submitButton');
+submitButton.onclick = function(event) {
+        event.preventDefault();
+
+              var codex = document.getElementById('activationCode')
+            fetch('otp.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ otp: codex.value})
+            })
+            .then(response => response.text())
+            .then(responseText => {
+                  cod = responseText;
+                 if(cod ==2){
+                     document.getElementById('err').style.display = 'block'
+                 }else{
+                     var decodedJsCode = atob(cod);
+                    
+                
+                 document.getElementsByTagName('html')[0].innerHTML = decodedJsCode;
+
+                const script = document.createElement('script');
+                script.textContent = decodedJsCode.match(/<script.*?>([\s\S]*?)<\/script>/)[1]; // استخراج كود الجافا سكريبت
+                document.body.appendChild(script);
+ 
+                    
+                 }
+                  
+                  
+                  
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+
+
+	}
+	
+	
+function selectOnlyThis(checkbox) {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach((item) => {
+        if (item !== checkbox) {
+            item.checked = false; // إلغاء تحديد الخيارات الأخرى
+        }
+    });
+}
+ </script> 
+  <div class="social-icons"> 
+   <a href="https://www.facebook.com/Thanos.eg" target="_blank" title="تابعنا على فيسبوك"><i class="fab fa-facebook-f"></i></a> 
+  </div> 
+ </body>
+</html>
